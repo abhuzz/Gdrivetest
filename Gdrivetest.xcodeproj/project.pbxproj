@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0CC420E0D4DE0910BAA409 /* libPods-Gdrivetest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D89EA8BFE147FD9D8EF22CA /* libPods-Gdrivetest.a */; };
+		C07589191F0B5EAF00A31C41 /* filevoice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C07589181F0B5EAF00A31C41 /* filevoice.mp3 */; };
 		C0951A541F0A707B004A9F4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0951A531F0A707B004A9F4C /* main.m */; };
 		C0951A571F0A707B004A9F4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0951A561F0A707B004A9F4C /* AppDelegate.m */; };
 		C0951A5A1F0A707B004A9F4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0951A591F0A707B004A9F4C /* ViewController.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D89EA8BFE147FD9D8EF22CA /* libPods-Gdrivetest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gdrivetest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE63AEE9ED759CE6FDC445D /* Pods-Gdrivetest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gdrivetest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gdrivetest/Pods-Gdrivetest.debug.xcconfig"; sourceTree = "<group>"; };
+		C07589181F0B5EAF00A31C41 /* filevoice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = filevoice.mp3; sourceTree = "<group>"; };
 		C0951A4F1F0A707B004A9F4C /* Gdrivetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gdrivetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0951A531F0A707B004A9F4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0951A551F0A707B004A9F4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		C0951A5E1F0A707B004A9F4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0951A611F0A707B004A9F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0951A631F0A707B004A9F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D226EF2DADD6FD8374540082 /* Pods-Gdrivetest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gdrivetest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gdrivetest/Pods-Gdrivetest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0CC420E0D4DE0910BAA409 /* libPods-Gdrivetest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		568479F85169AE55B8734848 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D89EA8BFE147FD9D8EF22CA /* libPods-Gdrivetest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8028027AA3EC60825C7E1C5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DE63AEE9ED759CE6FDC445D /* Pods-Gdrivetest.debug.xcconfig */,
+				D226EF2DADD6FD8374540082 /* Pods-Gdrivetest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C0951A461F0A707B004A9F4C = {
 			isa = PBXGroup;
 			children = (
 				C0951A511F0A707B004A9F4C /* Gdrivetest */,
 				C0951A501F0A707B004A9F4C /* Products */,
+				8028027AA3EC60825C7E1C5D /* Pods */,
+				568479F85169AE55B8734848 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +92,7 @@
 				C0951A5E1F0A707B004A9F4C /* Assets.xcassets */,
 				C0951A601F0A707B004A9F4C /* LaunchScreen.storyboard */,
 				C0951A631F0A707B004A9F4C /* Info.plist */,
+				C07589181F0B5EAF00A31C41 /* filevoice.mp3 */,
 				C0951A521F0A707B004A9F4C /* Supporting Files */,
 			);
 			path = Gdrivetest;
@@ -86,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0951A661F0A707B004A9F4C /* Build configuration list for PBXNativeTarget "Gdrivetest" */;
 			buildPhases = (
+				3A8575E9F1B5086C42053A67 /* [CP] Check Pods Manifest.lock */,
 				C0951A4B1F0A707B004A9F4C /* Sources */,
 				C0951A4C1F0A707B004A9F4C /* Frameworks */,
 				C0951A4D1F0A707B004A9F4C /* Resources */,
+				7EA5FBC9AE44733E8B2B7F5D /* [CP] Embed Pods Frameworks */,
+				506979A171685E0E169CBA77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,12 +168,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0951A621F0A707B004A9F4C /* LaunchScreen.storyboard in Resources */,
+				C07589191F0B5EAF00A31C41 /* filevoice.mp3 in Resources */,
 				C0951A5F1F0A707B004A9F4C /* Assets.xcassets in Resources */,
 				C0951A5D1F0A707B004A9F4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A8575E9F1B5086C42053A67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		506979A171685E0E169CBA77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gdrivetest/Pods-Gdrivetest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA5FBC9AE44733E8B2B7F5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gdrivetest/Pods-Gdrivetest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0951A4B1F0A707B004A9F4C /* Sources */ = {
@@ -272,22 +351,24 @@
 		};
 		C0951A671F0A707B004A9F4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE63AEE9ED759CE6FDC445D /* Pods-Gdrivetest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Gdrivetest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = horizonstack.Gdrivetest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.horizonstack.gdrivetest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		C0951A681F0A707B004A9F4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D226EF2DADD6FD8374540082 /* Pods-Gdrivetest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Gdrivetest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = horizonstack.Gdrivetest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.horizonstack.gdrivetest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -311,6 +392,7 @@
 				C0951A681F0A707B004A9F4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

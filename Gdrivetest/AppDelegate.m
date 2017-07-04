@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSError* configureError;
+    [[GGLContext sharedInstance] configureWithError: &configureError];
+    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
+
+    
     return YES;
 }
 
@@ -45,6 +51,15 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [[GIDSignIn sharedInstance] handleURL:url
+                               sourceApplication:sourceApplication
+                                      annotation:annotation];
 }
 
 
